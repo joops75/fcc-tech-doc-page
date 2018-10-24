@@ -1,0 +1,129 @@
+body {
+    background: rgb(230, 230, 230);
+    font-family: 'Courier New', Arial;
+    word-wrap: break-word;
+    margin: 0;
+}
+
+#navbar {
+    position: fixed; /* only required to pass fcc tests */
+}
+
+ul.navigation {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background-color: rgb(240, 240, 240);
+    list-style-type: none;
+    overflow: auto;
+    margin: 0;
+    padding: 0 0 0 0;
+    border-right: 1px solid black;
+}
+
+ul.navigation li {
+    margin: 20px 0 0 20px;
+}
+
+ul.navigation li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+ul.navigation li a:hover {
+    color: rgb(200, 0, 0);
+}
+
+main, footer {
+    margin-left: 220px;
+    margin-right: 20px;
+}
+
+section {
+    padding-top: 20px;
+}
+
+header {
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: square;
+}
+
+code {
+    display: block;
+    line-height: 22px;
+    background: rgb(210, 210, 210);
+    margin: 0 20px 0 20px;
+}
+
+footer {
+    font-family: Arial;
+    font-style: italic;
+    text-align: right;
+}
+
+@media screen and (max-width: 992px) {
+ 
+    #navbar {
+        position: relative; /* Not required but stated for consistency. See #navbar rule above */
+    }
+
+    ul.navigation {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid black;
+    }
+
+    ul.navigation li header {
+        text-align: center;
+    }
+
+    ul.navigation li a {
+        float: left;
+        margin: 0 15px 15px 15px;
+    }
+
+    main, footer {
+        margin-left: 20px;
+    }
+
+    code {
+        margin: 0 10px 0 10px;
+    }
+
+}
+
+@media screen and (max-width: 447px) {
+
+    ul.navigation li {
+        margin: 10px 0 0 10px;
+    }
+    
+    ul.navigation li a {
+        text-align: center;
+        float: none;
+    }
+    
+    main, footer {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    section {
+        padding-top: 5px;
+    }
+    
+    code {
+        margin: 0;
+    }
+        
+    footer {
+        text-align: left;
+    }
+
+}
